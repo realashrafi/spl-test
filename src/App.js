@@ -4,15 +4,17 @@ import Login from "./components/Routes/Login";
 import {routeObject} from "./components/Routes/routeObject";
 import NotFound from "./components/Routes/NotFound";
 import Navbar from "./components/layout/Navbar";
+import {useState} from "react";
 
 
 function App() {
+    const [log, setLog] = useState(false)
     return (
         <>
             <Router>
-                <Navbar/>
+                {log && <Navbar />}
                 <Routes>
-                    <Route path="/" element={<Login/>}/>
+                    <Route path="/" element={<Login setLog={setLog} />}/>
                     {routeObject.map((item) => (
                         <Route key={item.id} path={item.path} element={item.element}/>
                     ))}

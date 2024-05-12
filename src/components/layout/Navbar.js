@@ -7,6 +7,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MenuSimple from "../assets/port/UserMenu";
 
 const Navbar = () => {
+
     const [state, setState] = React.useState({
         top: false,
         left: false,
@@ -43,7 +44,7 @@ const Navbar = () => {
         </Box>
     );
     return (
-        <div className="flex px-4 w-full items-center border-b h-[4rem] ">
+        <div className="flex px-4 w-full items-center border-b h-[4rem] fixed bg-[#EEEFEE] z-50">
             <MenuSimple/>
             {['right'].map((anchor) => (
                 <div className={'fixed right-0 top-3'} key={anchor}>

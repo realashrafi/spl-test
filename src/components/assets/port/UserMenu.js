@@ -5,11 +5,13 @@ import { MenuButton as BaseMenuButton } from '@mui/base/MenuButton';
 import { MenuItem as BaseMenuItem, menuItemClasses } from '@mui/base/MenuItem';
 import { styled } from '@mui/system';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import {Link} from "react-router-dom";
 
 export default function MenuSimple() {
     const createHandleMenuClick = (menuItem) => {
         return () => {
             console.log(`Clicked on ${menuItem}`);
+            window.location.assign('/')
         };
     };
 
@@ -23,7 +25,9 @@ export default function MenuSimple() {
                 <MenuItem onClick={createHandleMenuClick('Language settings')}>
                     Language settings
                 </MenuItem>
+                <Link to={'/'}>
                 <MenuItem onClick={createHandleMenuClick('Log out')}>Log out</MenuItem>
+                </Link>
             </Menu>
         </Dropdown>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Page1 = () => {
+const Page1 = ({fragment}) => {
     return (
-        <div>
-            Page1
+        <div className={'pt-[4rem]'}>
+            {fragment}
         </div>
     );
 };
