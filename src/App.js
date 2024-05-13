@@ -5,6 +5,7 @@ import {routeObject} from "./components/Routes/objects/routeObject";
 import NotFound from "./components/Routes/NotFound";
 import Navbar from "./components/layout/navbar/Navbar";
 import {useState} from "react";
+import LoginTest from "./components/Routes/LoginTest";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 {log && <Navbar />}
                 <Routes>
                     <Route path="/" element={<Login setLog={setLog} />}/>
+                    {/*<Route path="/login" element={<LoginTest/>}/>*/}
                     {routeObject.map((item) => (
                         <Route key={item.id} path={item.path} element={item.element}/>
                     ))}

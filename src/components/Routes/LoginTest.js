@@ -4,7 +4,7 @@ import loginImage from '../assets/data/images/170736.jpg'
 import AOS from "aos";
 import axios from "axios";
 
-const Login = ({setLog}) => {
+const LoginTest = () => {
     const [username, setUsername] = useState()
     const [password, setPassword] = useState()
     // console.log(username,password)
@@ -13,8 +13,10 @@ const Login = ({setLog}) => {
         // window.location.assign('http://192.168.10.241:9000/login')
     }, []);
     const [email, setEmail] = useState()
-    const postMethod = async () => {
-        setLog(true)
+    const postMethod = async (e) => {
+
+
+        e.preventDefault();
         const url = 'http://192.168.10.241:9000/login'
         try {
             const response = await axios.post(url, {
@@ -55,7 +57,7 @@ const Login = ({setLog}) => {
                                    id="" name="" type="password"/>
                             <div className={'w-full h-[7px]'}/>
                             <Link to={'/page1'}>
-                                <button onClick={()=>setLog(true)}
+                                <button onClick={postMethod}
                                         className="w-full h-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Sign
                                     in
                                 </button>
@@ -69,4 +71,4 @@ const Login = ({setLog}) => {
     );
 };
 
-export default Login;
+export default LoginTest;
