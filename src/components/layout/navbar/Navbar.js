@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {routeObject} from "../Routes/routeObject";
+import {routeObject} from "../../Routes/objects/routeObject";
 import {Box, Button, Drawer} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import MenuSimple from "../assets/port/UserMenu";
+import MenuSimple from "../../assets/port/UserMenu";
+import BasicModal from "../../pages/components/modals/BasicModal";
 
 const Navbar = () => {
 
@@ -58,6 +58,7 @@ const Navbar = () => {
                     </Drawer>
                 </div>
             ))}
+            {/*<BasicModal/>*/}
         </div>
     );
 };

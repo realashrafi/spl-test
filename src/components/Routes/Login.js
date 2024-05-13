@@ -1,13 +1,19 @@
 import {Link} from "react-router-dom";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import loginImage from '../assets/data/images/170736.jpg'
-
+import AOS from "aos";
 const Login = ({setLog}) => {
+    useEffect(() => {
+        AOS.init()
+        // window.location.assign('http://192.168.10.241:9000/login')
+    }, []);
     const [email, setEmail] = useState()
     return (
         <div className="flex items-center justify-center pt-36 bg-[#EEEFEE]">
-            <img alt={''} className={'w-full h-full fixed top-[21rem] rounded-lg shadow-2xl shadow-black'} src={loginImage}/>
-            <div
+            <div data-aos="fade-up" className={'fixed top-[21rem]'}>
+            <img  alt={''} className={'w-full h-full  rounded-lg shadow-2xl shadow-black'} src={loginImage}/>
+            </div>
+            <div data-aos="fade-up"
                 className="h-96 flex items-center justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 z-20">
                 <div className="relative">
                     <div
@@ -32,7 +38,6 @@ const Login = ({setLog}) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

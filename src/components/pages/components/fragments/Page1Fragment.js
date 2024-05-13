@@ -1,10 +1,10 @@
 import React from 'react';
-import BasicTable from "./components/BasicTable";
-import DataTable from "./components/DataTable";
-import DenseTable from "./components/DenseTable";
-import EnhancedTable from "./components/EnhancedTableHead";
-import CustomizedTables from "./components/CustomizedTables";
-import CollapsibleTable from "./components/CollapsibleTable";
+import BasicTable from "../tables/BasicTable";
+import DataTable from "../tables/DataTable";
+import DenseTable from "../tables/DenseTable";
+import EnhancedTable from "../tables/EnhancedTableHead";
+import CustomizedTables from "../tables/CustomizedTables";
+import CollapsibleTable from "../tables/CollapsibleTable";
 
 
 const Page1Fragment = () => {

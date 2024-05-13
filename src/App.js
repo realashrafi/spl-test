@@ -1,9 +1,9 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Login from "./components/Routes/Login";
-import {routeObject} from "./components/Routes/routeObject";
+import {routeObject} from "./components/Routes/objects/routeObject";
 import NotFound from "./components/Routes/NotFound";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/layout/navbar/Navbar";
 import {useState} from "react";
 
 

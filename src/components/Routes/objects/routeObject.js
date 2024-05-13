@@ -1,10 +1,10 @@
-import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
+import Page1 from "../Page1";
+import Page2 from "../Page2";
+import Page3 from "../Page3";
 import FirstPageRoundedIcon from '@mui/icons-material/FirstPageRounded';
-import Page1Fragment from "../pages/Page1Fragment";
-import Page2Fragment from "../pages/Page2Fragment";
-import Page3Fragment from "../pages/Page3Fragment";
+import Page1Fragment from "../../pages/components/fragments/Page1Fragment";
+import Page2Fragment from "../../pages/components/fragments/Page2Fragment";
+import Page3Fragment from "../../pages/components/fragments/Page3Fragment";
 
 
 

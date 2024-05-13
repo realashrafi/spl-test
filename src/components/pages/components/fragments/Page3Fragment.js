@@ -1,5 +1,5 @@
 import React from 'react';
-import DenseTable from "./components/DenseTable";
+import DenseTable from "../tables/DenseTable";
 
 function Page3Fragment() {
     return (

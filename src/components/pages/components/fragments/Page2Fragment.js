@@ -1,6 +1,6 @@
 import React from 'react';
-import CustomizedTables from "./components/CustomizedTables";
-import CollapsibleTable from "./components/CollapsibleTable";
+import CustomizedTables from "../tables/CustomizedTables";
+import CollapsibleTable from "../tables/CollapsibleTable";
 
 function Page2Fragment() {
     return (
