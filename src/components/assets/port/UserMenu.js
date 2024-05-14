@@ -20,6 +20,7 @@ export default function MenuSimple() {
             <MenuButton>
             <AccountCircleIcon/>
             </MenuButton>
+
             <Menu slots={{ listbox: Listbox }}>
                 <MenuItem onClick={createHandleMenuClick('Profile')}>Profile</MenuItem>
                 <MenuItem onClick={createHandleMenuClick('Language settings')}>
